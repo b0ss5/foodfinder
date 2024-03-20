@@ -67,24 +67,26 @@ def opennow(data,timestamp=datetime.datetime.now().timestamp()):
 # print(opennow(data))
 # print(opennow(data, 1710766800))
 
-def menu(): #another win for the robots 
-    print("1. Good food all times ")
-    print("2. Good food today")
-    print("3. Open now")
-    print("4. Exit")
-    choice = input("Enter your choice: ")
-    if choice == '1':
-        food = get_goodfood(goodfood, data)
-        for item in food:
-            print(item)
-    elif choice == '2':
-        print(gftoday(goodfood, data))
-    elif choice == '3':
-        print(opennow(data))
-    elif choice == '4':
-        exit()
-    else:
-        print("Invalid choice. Please choose again.")
-        menu() #actually most cretive use of code ever what the fuck 
+def menu(goodfood, gftoday, data): #huge dub for the robots 
+    while True: #near-impossible billy g dub
+        print("1. Good food all times ")
+        print("2. Good food today")
+        print("3. Open now")
+        print("4. Exit")
+        choice = input("Enter your choice: ")
+        if choice == '1':
+            food = get_goodfood(goodfood, data)
+            for item in food:
+                print(item)
+        elif choice == '2':
+            print(gftoday(goodfood, data))
+        elif choice == '3':
+            print(opennow(data))
+        elif choice == '4':
+            exit()
+        else:
+            print("Invalid choice. Please choose again.")
+            menu() #actually most cretive use of code ever what the fuck 
 
-menu() #does a thing 
+
+menu(goodfood, gftoday, data) #does THE thing

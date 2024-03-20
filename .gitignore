@@ -1,0 +1,16 @@
+foodFinder.spec
+build/foodFinder/Analysis-00.toc
+build/foodFinder/base_library.zip
+build/foodFinder/EXE-00.toc
+build/foodFinder/foodFinder.pkg
+build/foodFinder/PKG-00.toc
+build/foodFinder/PYZ-00.pyz
+build/foodFinder/PYZ-00.toc
+build/foodFinder/warn-foodFinder.txt
+build/foodFinder/xref-foodFinder.html
+build/foodFinder/localpycs/pyimod01_archive.pyc
+build/foodFinder/localpycs/pyimod02_importers.pyc
+build/foodFinder/localpycs/pyimod03_ctypes.pyc
+build/foodFinder/localpycs/pyimod04_pywin32.pyc
+build/foodFinder/localpycs/struct.pyc
+dist/foodFinder.exe
