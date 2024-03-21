@@ -13,7 +13,7 @@ data = response.json()
 top = data.keys()
 
 #all of these foods are objectively good (down arrow )👇 add more but not too much more 
-goodfood = ['pulled pork', 'smoked gouda', 'steak', 'pierogi', 'chicken parm']
+goodfood = ['pulled pork', 'smoked gouda', 'steak', 'pierogi', 'chicken parm', 'nugget']
 
 #make a class for each food item with its name, eatery, and date
 class FoodItem:
@@ -79,14 +79,14 @@ def menu(goodfood, gftoday, data): #huge dub for the robots
             for item in food:
                 print(item)
         elif choice == '2':
-            print(gftoday(goodfood, data))
+            for item in gftoday(goodfood, data):
+                print(item)
         elif choice == '3':
-            print(opennow(data))
+            for item in opennow(data):
+                print(item)
         elif choice == '4':
             exit()
         else:
             print("Invalid choice. Please choose again.")
-            menu() #actually most cretive use of code ever what the fuck 
-
 
 menu(goodfood, gftoday, data) #does THE thing
